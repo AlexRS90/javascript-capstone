@@ -1,5 +1,5 @@
 import './style.css';
-import apiCall from './marvel-api-call';//eslint-disable-line
+import apiCall from './marvel-api-call';
 
 let superHeroes = [];
 
@@ -8,7 +8,7 @@ const displaySHCards = (arraySuperH) => {
   let newCard = '';
   superHeroes.forEach((heroes) => {
     newCard += `<div class="card-container d-flex">
-    <img src="${heroes.thumbnail.path}/portrait_fantastic.jpg" alt="${heroes.name} pincture">
+    <img src="${heroes.thumbnail.path}/portrait_fantastic.${heroes.thumbnail.extension}" alt="${heroes.name} pincture">
     <div class="d-flex card-info">
         <h3>${heroes.name}</h3>
         <div>
@@ -21,7 +21,7 @@ const displaySHCards = (arraySuperH) => {
     </div>`;
   });
   document.querySelector('.super-heroes-container').innerHTML = newCard;
-};
+}
 
 apiCall();
 
