@@ -28,6 +28,26 @@ body {
   width: 20%;
 }
 
+.super-heroes-container {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-container {
+  flex-direction: column;
+  width: 25%;
+  margin: 2.5%;
+  border: 5px solid teal;
+}
+
+.card-info {
+  justify-content: space-between;
+}
+
+.main-btn {
+  margin: 5px;
+}
+
 #footer {
   width: 100%;
   position: fixed;
