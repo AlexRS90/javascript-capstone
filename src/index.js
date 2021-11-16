@@ -1,5 +1,5 @@
 import './style.css';
-import apiCall from './marvel-api-call';
+import apiCall from './marvel-api-call';//eslint-disable-line
 
 let superHeroes = [];
 
@@ -21,7 +21,7 @@ const displaySHCards = (arraySuperH) => {
     </div>`;
   });
   document.querySelector('.super-heroes-container').innerHTML = newCard;
-}
+};
 
 apiCall();
 

@@ -4,7 +4,6 @@ const url = 'https://gateway.marvel.com/v1/public/characters?ts=1&hash=cef440fde
 const apiCall = async () => {
   const call = await fetch(url);
   const arr = await call.json();
-  console.log(arr.data.results);
   displaySHCards(arr.data.results);
 };
 
