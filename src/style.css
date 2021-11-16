@@ -5,6 +5,13 @@ body {
   background-color: bisque;
 }
 
+:root {
+  --marvel-red: #e23636;
+  --marvel-brown: #504a4a;
+  --marvel-blue: #518cca;
+  --marvel-orange: #f78f3f;
+}
+
 .d-flex {
   display: flex;
 }
@@ -26,4 +33,21 @@ body {
   position: fixed;
   bottom: 0;
   padding: 16px;
+}
+
+.overlay {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+width: 100%;
+max-width: 800px;
+background-color: white;
 }
