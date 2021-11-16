@@ -29,31 +29,34 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-### Setup
+### Setup Locally
+- Open your terminal and run the following command: <code>git clone https://github.com/AlexRS90/javascript-capstone.git</code>
+- Run the command <code>npm install</code>
+- Run the command <code>npm run build</code>
+- Run the command <code>npm run start</code>
 
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
+Once you completed this steps you should see the app running at: http://localhost:8080/ in your browser.
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Abel Herrera**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/Lino09)
+- Twitter: [@twitterhandle](https://twitter.com/AbelHerreraZam1)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/abelherreraz)
 
-👤 **Author2**
+👤 **Jim Ntare**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/Ntare)
+- Twitter: [@twitterhandle](https://twitter.com/JimNtare)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/jimntare/)
+
+👤 **Alejandro Ramos**
+
+- GitHub: [@githubhandle](https://github.com/AlexRS90)
+- Twitter: [@twitterhandle](https://twitter.com/AlejandroRBenji)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/alejandro-ramos-santos-9b0b52135/)
 
 ## 🤝 Contributing
 
