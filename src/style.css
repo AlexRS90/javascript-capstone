@@ -24,7 +24,6 @@ body {
 .super-heroes-container {
   flex-wrap: wrap;
   justify-content: center;
-
 }
 
 .card-container {
