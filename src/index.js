@@ -2,7 +2,7 @@ import './style.css';
 import * as rsvtn from './reservations.js';
 
 import apiCall from './marvel-api-call';//eslint-disable-line
-import displayItem from './display-item';
+import displayItem from './display-item.js';
 
 let superHeroes = [];
 
@@ -19,7 +19,7 @@ const displaySHCards = (arraySuperH) => {
             <p>10 Likes</p>
         </div>
     </div>
-    <input type="button" class="btn-comments main-btn" value="Comments">
+    <input type="button" class="btn-comments main-btn" value="Comments" id="${heroes.id}">
     <input type="button" class="btn-reservation main-btn" value="Reservations" id="${heroes.id}">
     </div>`;
   });
@@ -33,12 +33,12 @@ window.onload = setTimeout(() => {
       rsvtn.create(el.id);
     });
   });
-  
+
   document.querySelectorAll('.btn-comments').forEach((el) => {
     el.addEventListener('click', () => {
-      displayItem(el.parentElement)
-    })
-  })
+      displayItem(el.id);
+    });
+  });
 }, 1000);
 
 export default displaySHCards;
