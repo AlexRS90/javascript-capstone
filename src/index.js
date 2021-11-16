@@ -2,6 +2,7 @@ import './style.css';
 import * as rsvtn from './reservations.js';
 
 import apiCall from './marvel-api-call';//eslint-disable-line
+import displayItem from './display-item';
 
 let superHeroes = [];
 
@@ -32,6 +33,12 @@ window.onload = setTimeout(() => {
       rsvtn.create(el.id);
     });
   });
+  
+  document.querySelectorAll('.btn-comments').forEach((el) => {
+    el.addEventListener('click', () => {
+      displayItem(el.parentElement)
+    })
+  })
 }, 1000);
 
 export default displaySHCards;

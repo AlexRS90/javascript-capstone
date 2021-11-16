@@ -5,6 +5,7 @@ const apiCall = async () => {
   const call = await fetch(url);
   const arr = await call.json();
   displaySHCards(arr.data.results);
+  return arr.data.results;
 };
 
 export default apiCall;
