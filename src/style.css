@@ -68,11 +68,47 @@ body {
   z-index: 50;;
 }
 
-.content {
+.content-rsvtn {
 width: 100%;
 max-width: 800px;
 background-color: white;
 display: flex;
 flex-direction: column;
 align-items: center;
+padding: 24px;
+color: var(--marvel-blue);
+border-radius: 5px;
+position: relative;
+}
+
+.content-rsvtn h2 {
+  padding: 0;
+  margin: 0 0 24px 0;
+  font-size: 28px;
+}
+
+.content-rsvtn p {
+  font-size: 18px;
+}
+
+.content-rsvtn img {
+  border-radius: 5px;
+}
+
+.close-rsvtn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  border: none;
+  color: var(--marvel-red);
+  background-color: transparent;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.close-rsvtn:hover {
+  background-color: var(--marvel-red);
+  color: white;
 }
