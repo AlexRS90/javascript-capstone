@@ -53,6 +53,7 @@ body {
   position: fixed;
   bottom: 0;
   padding: 16px;
+  background: var(--marvel-orange);
 }
 
 .overlay {
@@ -60,14 +61,18 @@ body {
   height: 100vh;
   width: 100%;
   top: 0;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(5px);
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 50;;
 }
 
 .content {
 width: 100%;
 max-width: 800px;
 background-color: white;
+display: flex;
+flex-direction: column;
+align-items: center;
 }

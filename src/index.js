@@ -1,7 +1,6 @@
 import './style.css';
 import * as rsvtn from './reservations.js';
 
-rsvtn.create();
 import apiCall from './marvel-api-call';//eslint-disable-line
 
 let superHeroes = [];
@@ -20,12 +19,19 @@ const displaySHCards = (arraySuperH) => {
         </div>
     </div>
     <input type="button" class="btn-comments main-btn" value="Comments">
-    <input type="button" class="btn-reservation main-btn"value="Reservations">
+    <input type="button" class="btn-reservation main-btn" value="Reservations" id="${heroes.id}">
     </div>`;
   });
   document.querySelector('.super-heroes-container').innerHTML = newCard;
 };
-
 apiCall();
+
+window.onload = setTimeout(() => {
+  document.querySelectorAll('.btn-reservation').forEach((el) => {
+    el.addEventListener('click', () => {
+      rsvtn.create(el.id);
+    });
+  });
+}, 1000);
 
 export default displaySHCards;
