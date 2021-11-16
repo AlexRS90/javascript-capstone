@@ -8,16 +8,15 @@ export async function create(id) {
   const charName = document.createElement('h2');
   charName.innerText = charData.name;
   const charDesc = document.createElement('p');
-  charDesc.innerText = charData.description || 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu.' ;
+  charDesc.innerText = charData.description || 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu.';
   const charPicture = document.createElement('img');
   charPicture.src = `${charData.thumbnail.path}/standard_fantastic.${charData.thumbnail.extension}`;
   const closeBtn = document.createElement('button');
   closeBtn.innerText = 'X';
   closeBtn.classList.add('close-rsvtn');
-  closeBtn.addEventListener('click', ()=> {
-    
+  closeBtn.addEventListener('click', () => {
     document.body.removeChild(overlay);
-  })
+  });
   content.append(charName, charPicture, charDesc, closeBtn);
   overlay.appendChild(content);
   overlay.addEventListener('click', (e) => {
@@ -28,5 +27,5 @@ export async function create(id) {
 }
 
 export function getReservation() {
-  console.log('getting reservation');
+
 }

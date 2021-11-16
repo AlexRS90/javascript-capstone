@@ -65,20 +65,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 50;;
+  z-index: 50;
 }
 
 .content-rsvtn {
-width: 100%;
-max-width: 800px;
-background-color: white;
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 24px;
-color: var(--marvel-blue);
-border-radius: 5px;
-position: relative;
+  width: 100%;
+  max-width: 800px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  color: var(--marvel-blue);
+  border-radius: 5px;
+  position: relative;
 }
 
 .content-rsvtn h2 {
