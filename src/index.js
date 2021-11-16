@@ -1,9 +1,7 @@
 import './style.css';
-<<<<<<< HEAD
 import * as rsvtn from './reservations.js';
 
 rsvtn.create();
-=======
 import apiCall from './marvel-api-call';//eslint-disable-line
 
 let superHeroes = [];
@@ -31,4 +29,3 @@ const displaySHCards = (arraySuperH) => {
 apiCall();
 
 export default displaySHCards;
->>>>>>> 1a298893de0bb99a21a219b3b20d918683547aac
