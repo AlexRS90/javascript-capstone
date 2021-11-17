@@ -5,6 +5,10 @@ body {
   background-color: bisque;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --marvel-red: #e23636;
   --marvel-brown: #504a4a;
@@ -71,6 +75,7 @@ body {
 .content-rsvtn {
   width: 100%;
   max-width: 800px;
+  height: 850px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -79,6 +84,7 @@ body {
   color: var(--marvel-blue);
   border-radius: 5px;
   position: relative;
+  overflow-y: auto;
 }
 
 .content-rsvtn h2 {
@@ -111,4 +117,64 @@ body {
 .close-rsvtn:hover {
   background-color: var(--marvel-red);
   color: white;
+}
+
+.rsvtn-form {
+  text-align: center;
+  width: 75%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.rsvtn-form h2 {
+  grid-column: 1 / 3;
+  color: var(--marvel-brown);
+}
+
+.rsvtn-form button {
+  cursor: pointer;
+  padding: 16px;
+  grid-column: 1 / 3;
+}
+
+.rsvtn-label {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.rsvtn-input {
+  width: 100%;
+  padding: 8px;
+}
+
+.label-name {
+  grid-column: 1 / 3;
+}
+
+.rsvtns-list {
+  list-style: none;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}
+
+.rsvtns-list h2 {
+  grid-column: 1 / 4;
+  color: var(--marvel-brown);
+}
+
+.rsvtns-list li {
+  color: white;
+  padding: 4px;
+  background-color: var(--marvel-brown);
+  border-radius: 4px;
+}
+
+.rsvtns-list li * {
+  font-size: 14px;
+  margin: 4px 0;
+  padding: 0 0;
 }
