@@ -16,7 +16,9 @@ const popUp = (characterData) => {
   closeBtn.addEventListener('click', () => {
     document.body.removeChild(overlay);
   });
+
   content.append(charName, charPicture, charDesc, closeBtn);
+
   overlay.appendChild(content);
   overlay.addEventListener('click', (e) => {
     if (overlay !== e.target) return;
