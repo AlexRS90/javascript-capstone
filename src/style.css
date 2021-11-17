@@ -112,3 +112,14 @@ body {
   background-color: var(--marvel-red);
   color: white;
 }
+
+.fa-heart {
+  color: var(--marvel-brown);
+  width: 20px;
+}
+
+.likes-container {
+  padding-top: 5px;
+  flex-direction: column;
+  align-items: center;
+}
