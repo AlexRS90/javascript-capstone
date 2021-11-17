@@ -2,6 +2,8 @@ import popUp from './pop-up.js';
 
 const appID = 'bJg0BJIh3l3Fd7AaCJp1';
 
+export const countRsvtns = (rsvtns) => `${rsvtns.length} ${rsvtns.length === 1 ? 'person' : 'people'} is being rescued by this Hero in the next days`;
+
 export const fillRsrvtns = async (id) => {
   let rsvtns = await fetch(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${appID}/reservations?item_id=${id}`).then((response) => response.json()).catch(() => []);
   if (rsvtns.error) {
@@ -9,6 +11,9 @@ export const fillRsrvtns = async (id) => {
   }
   const futureRsvtns = document.querySelector('.rsvtns-list');
   futureRsvtns.innerHTML = '';
+  const rsvtnsCount = document.createElement('h2');
+  rsvtnsCount.innerText = countRsvtns(rsvtns);
+  futureRsvtns.appendChild(rsvtnsCount);
   rsvtns.forEach((reservation) => {
     const card = document.createElement('li');
     card.innerHTML = `<p>${reservation.username}</p>
