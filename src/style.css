@@ -178,3 +178,41 @@ body {
   margin: 4px 0;
   padding: 0 0;
 }
+
+#comment-input {
+  color: #000;
+}
+
+#comment-input h3 {
+  font-size: 25px;
+}
+
+#comment-input input, #comment-input textarea  {
+  padding: 10px 10px;
+  margin: 10px 0;
+}
+
+#comment-input textarea {
+  padding: 30px 10px;
+}
+
+#comment-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.single-comment {
+  background-color: var(--marvel-blue);
+  padding: 2px 10px;
+  border-radius: 8px;
+  border: 1px solid #000;
+}
+
+.single-comment p {
+  font-size: 24px;
+  color: #fff;
+}
+
+.single-comment h4 {
+  margin-left: 10px;
+}
