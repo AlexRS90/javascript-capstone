@@ -136,7 +136,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"giveLike\": () => (/* binding */ giveLike)\n/* harmony export */ });\nconst url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/bJg0BJIh3l3Fd7AaCJp1/likes';\n\nconst giveLike = async (newLike) => {\n  const addLike = await fetch(url, {\n      method: 'POST',\n      body: JSON.stringify({\n        item_id: newLike,\n      }),\n      headers: {\n        'Content-type': 'application/json; charset=UTF-8',\n      },\n  });\n  const arr = await addLike.json();\n  console.log(arr);\n};\n\n\n\n//# sourceURL=webpack://webpack/./src/likes_involment_api.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"giveLike\": () => (/* binding */ giveLike)\n/* harmony export */ });\nconst url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/bJg0BJIh3l3Fd7AaCJp1/likes';\n\nconst giveLike = async (newLike) => {\n  const addLike = await fetch(url, {\n      method: 'POST',\n      body: JSON.stringify({\n        item_id: newLike,\n      }),\n      headers: {\n        'Content-type': 'application/json; charset=UTF-8',\n      },\n  });\n  getLike();\n};\n\nconst getLike = async () => {\n  const checkLikes = await fetch(url);\n  const allLikes = await checkLikes.json();\n  console.log(allLikes);\n};\n\n\n\n//# sourceURL=webpack://webpack/./src/likes_involment_api.js?");
 
 /***/ }),
 
