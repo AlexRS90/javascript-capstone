@@ -1,5 +1,6 @@
 import './style.css';
 import * as rsvtn from './reservations.js';
+import * as likeAPI from './likes_involment_api.js'
 
 import apiCall from './marvel-api-call';//eslint-disable-line
 import displayItem from './display-item.js';
@@ -14,8 +15,8 @@ const displaySHCards = (arraySuperH) => {
     <img src="${heroes.thumbnail.path}/portrait_fantastic.${heroes.thumbnail.extension}" alt="${heroes.name} pincture">
     <div class="d-flex card-info">
         <h3>${heroes.name}</h3>
-        <div>
-            <a href="#"><img src="" alt="Like super hero"></a>
+        <div class="likes-container d-flex">
+            <i class="fas fa-heart" id="${heroes.id}"></i>
             <p>10 Likes</p>
         </div>
     </div>
@@ -37,6 +38,12 @@ window.onload = setTimeout(() => {
   document.querySelectorAll('.btn-comments').forEach((el) => {
     el.addEventListener('click', () => {
       displayItem(el.id);
+    });
+  });
+
+  document.querySelectorAll('.fa-heart').forEach((like) => {
+    like.addEventListener('click', () => {
+      likeAPI.giveLike(like.id);
     });
   });
 }, 1000);
