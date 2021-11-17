@@ -10,8 +10,13 @@ const giveLike = async (newLike) => {
         'Content-type': 'application/json; charset=UTF-8',
       },
   });
-  const arr = await addLike.json();
-  console.log(arr);
+  getLike();
+};
+
+const getLike = async () => {
+  const checkLikes = await fetch(url);
+  const allLikes = await checkLikes.json();
+  console.log(allLikes);
 };
 
 export { giveLike };
