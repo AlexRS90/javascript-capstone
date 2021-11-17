@@ -119,7 +119,7 @@ body {
   color: white;
 }
 
-.rsvtn-form  {
+.rsvtn-form {
   text-align: center;
   width: 75%;
   display: grid;
@@ -173,10 +173,8 @@ body {
   border-radius: 4px;
 }
 
-.rsvtns-list li *{
+.rsvtns-list li * {
   font-size: 14px;
   margin: 4px 0;
   padding: 0 0;
-
 }
-
