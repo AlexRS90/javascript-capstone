@@ -75,6 +75,7 @@ body {
 .content-rsvtn {
   width: 100%;
   max-width: 800px;
+  height: 850px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -83,6 +84,7 @@ body {
   color: var(--marvel-blue);
   border-radius: 5px;
   position: relative;
+  overflow-y: auto;
 }
 
 .content-rsvtn h2 {
@@ -152,5 +154,23 @@ body {
 
 .rsvtns-list {
   list-style: none;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}
+
+.rsvtns-list li {
+  color: white;
+  padding: 4px;
+  background-color: var(--marvel-brown);
+  border-radius: 4px;
+}
+
+.rsvtns-list li *{
+  font-size: 14px;
+  margin: 4px 0;
+  padding: 0 0;
+
 }
 
