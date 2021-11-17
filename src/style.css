@@ -129,6 +129,7 @@ body {
 
 .rsvtn-form h2 {
   grid-column: 1 / 3;
+  color: var(--marvel-brown);
 }
 
 .rsvtn-form button {
@@ -158,6 +159,11 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 16px;
+}
+
+.rsvtns-list h2 {
+  grid-column: 1 / 4;
+  color: var(--marvel-brown);
 }
 
 .rsvtns-list li {
