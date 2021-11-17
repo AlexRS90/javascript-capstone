@@ -180,6 +180,8 @@ body {
 }
 
 #comment-input {
+  display: flex;
+  flex-direction: column;
   color: #000;
 }
 
@@ -187,18 +189,14 @@ body {
   font-size: 25px;
 }
 
-#comment-input input, #comment-input textarea  {
+#comment-input input,
+#comment-input textarea {
   padding: 10px 10px;
   margin: 10px 0;
 }
 
 #comment-input textarea {
   padding: 30px 10px;
-}
-
-#comment-input {
-  display: flex;
-  flex-direction: column;
 }
 
 .single-comment {
