@@ -20,6 +20,11 @@ const displayComments = async (characterId) => {
   return comments.status === 400 ? [] : comments.json();
 };
 
+const commentCounter = async (characterId) => {
+  const data = await displayComments(characterId);
+  return data;
+};
+
 const comments = async (characterData) => {
   const content = document.querySelector('.content-rsvtn');
 
@@ -43,10 +48,11 @@ const comments = async (characterData) => {
   submitComment.addEventListener('click', () => postComment(characterData.id, usernameInput.value, commentInput.value));
 
   const comments = await displayComments(characterData.id);
+  const commentNumber = await commentCounter(characterData.id);
 
   const commentContainer = document.createElement('div');
   const commentsHeading = document.createElement('h4');
-  commentsHeading.innerHTML = 'Comments';
+  commentsHeading.innerHTML = `${commentNumber.length} Comment(s)`;
   commentContainer.appendChild(commentsHeading);
 
   if (comments.length === 0) {
