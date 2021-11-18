@@ -1,6 +1,6 @@
 import './style.css';
 import * as rsvtn from './reservations.js';
-import * as likeAPI from './likes_involment_api.js'
+import * as likeAPI from './likes_involment_api.js';//eslint-disable-line
 
 import  apiCall from './marvel-api-call';//eslint-disable-line
 import displayItem from './display-item.js';
@@ -29,19 +29,21 @@ const displaySHCards = (arraySuperH) => {
 };
 
 const displayLike = (likeArray) => {
+  const singular = ' like';
+  const plural = ' likes';
   likesCounter = likeArray;
   setTimeout(() => {
     document.querySelectorAll('.number-likes').forEach((like) => {
-    const getId = like.id;
-    likesCounter.forEach((find) => {
-      if(find.item_id.split('_', 2)[1] === getId.split('_', 2)[1]) {
-        if (find.likes === 1) {
-          like.innerHTML = find.likes + ' like';
-        } else {
-          like.innerHTML = find.likes + ' likes';
+      const getId = like.id;
+      likesCounter.forEach((find) => {
+        if(find.item_id.split('_', 2)[1] === getId.split('_', 2)[1]) {
+          if (find.likes === 1) {
+            like.innerHTML = find.likes + singular;
+          } else {
+            like.innerHTML = find.likes + plural;
+          }
         }
-      }
-    });
+      });
     });
   }, 500);
 };
