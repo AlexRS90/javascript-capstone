@@ -20,7 +20,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://alexrs90.github.io/javascript-capstone/dist)
 
 ### Setup Locally
 - Open your terminal and run the following command: <code>git clone https://github.com/AlexRS90/javascript-capstone.git</code>
