@@ -16,12 +16,12 @@ const postComment = async (characterId, username, comment) => {
 
 const displayComments = async (characterId) => {
   try {
-      const url = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/bJg0BJIh3l3Fd7AaCJp1/comments?item_id=${characterId}`;
-      const comments = await fetch(url);
-      const result = await comments.json();
-      return result;
+    const url = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/bJg0BJIh3l3Fd7AaCJp1/comments?item_id=${characterId}`;
+    const comments = await fetch(url);
+    const result = await comments.json();
+    return result;
   } catch (e) {
-      return e;
+    return e;
   }
 };
 
@@ -45,7 +45,11 @@ const comments = async (characterData) => {
 
   const submitComment = document.createElement('button');
   submitComment.innerHTML = 'Submit Comment';
-  submitComment.addEventListener('click', () => postComment(characterData.id, usernameInput.value, commentInput.value));
+  submitComment.addEventListener('click', () => {
+    postComment(characterData.id, usernameInput.value, commentInput.value);
+    usernameInput.value = '';
+    commentInput.value = '';
+  });
 
   let comments = await displayComments(characterData.id);
 
@@ -58,10 +62,9 @@ const comments = async (characterData) => {
     noComment.innerHTML = 'No Comments Yet';
     commentContainer.appendChild(noComment);
   }
-  
+
   commentsHeading.innerHTML = `${comments.length} Comment(s)`;
   commentContainer.appendChild(commentsHeading);
-
 
   comments.forEach((comment) => {
     const singleComment = document.createElement('div');
