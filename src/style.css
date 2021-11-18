@@ -2,7 +2,19 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background-color: bisque;
+  background-color: var(--marvel-blue);
+  font-family: 'cpt-marvel', monospace ;
+  color: white;
+}
+
+@font-face {
+  font-family: marvel-logo;
+  src: url(./assets/fonts/MarvelRegular-Dj83.ttf);
+}
+
+@font-face {
+  font-family: cpt-marvel;
+  src: url(./assets/fonts/Captainmarvel-anm9.ttf);
 }
 
 * {
@@ -12,7 +24,7 @@ body {
 :root {
   --marvel-red: #e23636;
   --marvel-brown: #504a4a;
-  --marvel-blue: #518cca;
+  --marvel-blue: rgb(18, 17, 47);
   --marvel-orange: #f78f3f;
 }
 
@@ -20,16 +32,43 @@ body {
   display: flex;
 }
 
+.logo-wrap {
+  background-color: var(--marvel-red);
+  display: flex;
+  align-items: center;
+  padding: 20px 16px 8px 20px;
+}
+
+.logo {
+  font-family: 'marvel-logo', monospace;
+  font-size: 60px;
+  color: white;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
 .nav-container {
   justify-content: space-between;
-  padding: 2%;
+  padding: 12px 16px;
+  background-color: var(--marvel-blue);
+  box-shadow: 0 0 8px 0 var(--marvel-red);
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .nav-menu {
   list-style: none;
   justify-content: space-between;
   padding-left: 0;
-  width: 20%;
+  align-items: center;
+}
+
+.nav-menu li {
+  color: #fff;
+  margin: 0 16px;
+  cursor: pointer;
 }
 
 .super-heroes-container {
@@ -50,6 +89,14 @@ body {
 
 .main-btn {
   margin: 5px;
+  padding: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.main-btn:hover {
+  background-color: var(--marvel-blue);
+  color: white;
+  border: 1px solid white;
 }
 
 #footer {
@@ -227,6 +274,6 @@ body {
 }
 
 .number-of-items {
-  padding: 2%;
+  padding: 120px 0 0 16px;
   font-size: 20px;
 }
