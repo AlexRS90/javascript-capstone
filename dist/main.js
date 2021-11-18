@@ -196,7 +196,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \***************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"countingCards\": () => (/* binding */ countingCards)\n/* harmony export */ });\nconst countingCards = (heroArray) => {\n  const allCards = heroArray.length;\n  return(allCards);\n};\n\n\n\n//# sourceURL=webpack://webpack/./src/testing-items-homepage.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"countingCards\": () => (/* binding */ countingCards),\n/* harmony export */   \"hello\": () => (/* binding */ hello)\n/* harmony export */ });\nconst countingCards = (heroArray) => {\n  const allCards = heroArray.length;\n  return (allCards);\n};\n\nconst hello = () => {\n\n};\n\n\n\n//# sourceURL=webpack://webpack/./src/testing-items-homepage.js?");
 
 /***/ })
 

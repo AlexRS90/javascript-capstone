@@ -1,7 +1,7 @@
 import './style.css';
 import * as rsvtn from './reservations.js';
 import * as likeAPI from './likes_involment_api.js';//eslint-disable-line
-import {countingCards} from './testing-items-homepage.js';
+import { countingCards } from './testing-items-homepage.js';
 
 import  apiCall from './marvel-api-call';//eslint-disable-line
 import displayItem from './display-item.js';
