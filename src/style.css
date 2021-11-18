@@ -127,7 +127,7 @@ body {
 .content-rsvtn {
   width: 100%;
   max-width: 800px;
-  height: 850px;
+  height: 750px;
   background-color: white;
   display: flex;
   flex-direction: column;
