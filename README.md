@@ -35,21 +35,21 @@ Once you completed this steps you should see the app running at: http://localhos
 
 👤 **Abel Herrera**
 
-- GitHub: [@githubhandle](https://github.com/Lino09)
-- Twitter: [@twitterhandle](https://twitter.com/AbelHerreraZam1)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/abelherreraz)
+- GitHub: [@Lino09](https://github.com/Lino09)
+- Twitter: [@AbelHerreraZam1](https://twitter.com/AbelHerreraZam1)
+- LinkedIn: [@abelherrarz](https://linkedin.com/in/abelherreraz)
 
 👤 **Jim Ntare**
 
-- GitHub: [@githubhandle](https://github.com/Ntare)
-- Twitter: [@twitterhandle](https://twitter.com/JimNtare)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/jimntare/)
+- GitHub: [@Ntare](https://github.com/Ntare)
+- Twitter: [@JimNtare](https://twitter.com/JimNtare)
+- LinkedIn: [@jimntare](https://www.linkedin.com/in/jimntare/)
 
 👤 **Alejandro Ramos**
 
-- GitHub: [@githubhandle](https://github.com/AlexRS90)
-- Twitter: [@twitterhandle](https://twitter.com/AlejandroRBenji)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/alejandro-ramos-santos-9b0b52135/)
+- GitHub: [@AlexRS90](https://github.com/AlexRS90)
+- Twitter: [@AlejandroRBenji](https://twitter.com/AlejandroRBenji)
+- LinkedIn: [@alejandro-ramos-santos-9b0b52135](https://www.linkedin.com/in/alejandro-ramos-santos-9b0b52135/)
 
 ## 🤝 Contributing
 
