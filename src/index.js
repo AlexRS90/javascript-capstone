@@ -1,6 +1,7 @@
 import './style.css';
 import * as rsvtn from './reservations.js';
 import * as likeAPI from './likes_involment_api.js';//eslint-disable-line
+import { countingCards } from './testing-items-homepage.js';
 
 import  apiCall from './marvel-api-call';//eslint-disable-line
 import displayItem from './display-item.js';
@@ -10,6 +11,7 @@ let likesCounter = [];
 
 const displaySHCards = (arraySuperH) => {
   superHeroes = arraySuperH;
+  const message = 'Superheroes: ';
   let newCard = '';
   superHeroes.forEach((heroes) => {
     newCard += `<div class="card-container d-flex">
@@ -26,6 +28,7 @@ const displaySHCards = (arraySuperH) => {
     </div>`;
   });
   document.querySelector('.super-heroes-container').innerHTML = newCard;
+  document.querySelector('.number-of-items').innerHTML = message + countingCards(superHeroes);
 };
 
 const displayLike = (likeArray) => {
