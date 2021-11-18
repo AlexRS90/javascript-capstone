@@ -1,33 +1,26 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Marvel's Characters
 
-> One paragraph statement about the project.
+> Here you can find some of Marvel's characters, give a commetn, like them or even book a rescue!
 
-![screenshot](./app_screenshot.png)
+![screenshot](ssCapstone.png)
 
-Additional description about the project and its features.
+## Description
+
+- This project was develop by a team of three people, here everyone of us code a single section, we follow gitflow to build the whole project and sometimes we solved conflicts in order to merge our pull request to dev branch. This project is working with two APIs one to get te info about the characters and the second one to post comments, reservations and even likes for your favorites ones.
+
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- JavaScript
+- Webpack
+- HTML/CSS
+- Linters
 
 ## Live Demo
 
 [Live Demo Link](https://livedemo.com)
-
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
 
 ### Setup Locally
 - Open your terminal and run the following command: <code>git clone https://github.com/AlexRS90/javascript-capstone.git</code>
@@ -62,7 +55,7 @@ Once you completed this steps you should see the app running at: http://localhos
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/AlexRS90/javascript-capstone/issues).
 
 ## Show your support
 
