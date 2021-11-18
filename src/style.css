@@ -3,7 +3,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: var(--marvel-blue);
-  font-family: 'cpt-marvel', monospace ;
+  font-family: 'cpt-marvel', monospace;
   color: white;
 }
 
@@ -99,6 +99,7 @@ body {
   font-weight: 600;
   cursor: pointer;
 }
+
 .main-btn:hover {
   background-color: var(--marvel-blue);
   color: white;
