@@ -8,7 +8,7 @@
 
 ## Description
 
-- This project was develop by a team of three people, here everyone of us code a single section, we follow gitflow to build the whole project and sometimes we solved conflicts in order to merge our pull request to dev branch. This project is working with two APIs one to get te info about the characters and the second one to post comments, reservations and even likes for your favorites ones.
+- This project was developed by a team of three people, here every one of us code a single section, we follow git-flow to build the whole project and sometimes we solved conflicts to merge our pull request to the dev branch. This project is working with two APIs one to get the info about the characters and the second one to post comments, reservations and even likes for your favourite ones.
 
 
 ## Built With
