@@ -36,7 +36,7 @@ const displayLike = (likeArray) => {
     document.querySelectorAll('.number-likes').forEach((like) => {
       const getId = like.id;
       likesCounter.forEach((find) => {
-        if(find.item_id.split('_', 2)[1] === getId.split('_', 2)[1]) {
+        if (find.item_id.split('_', 2)[1] === getId.split('_', 2)[1]) {
           if (find.likes === 1) {
             like.innerHTML = find.likes + singular;
           } else {
