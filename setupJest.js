@@ -1,4 +1,4 @@
 import fetchMock from 'jest-fetch-mock';
 
-fetchMock.enableMocks()
-// fetchMock.dontMock() 
+fetchMock.enableMocks();
+// fetchMock.dontMock()
