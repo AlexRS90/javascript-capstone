@@ -2,7 +2,7 @@
 
 # Marvel's Characters
 
-> Here you can find some of Marvel's characters, give a commetn, like them or even book a rescue!
+> Here you can find some of Marvel's characters, write a comment, like them or even book a rescue!
 
 ![screenshot](ssCapstone.png)
 
