@@ -40,7 +40,7 @@ body {
 }
 
 .logo {
-  font-family: 'marvel-logo', monospace;
+  font-family: 'marvel-logo', monospace !important;
   font-size: 60px;
   color: white;
   padding: 0;
@@ -80,7 +80,13 @@ body {
   flex-direction: column;
   width: 25%;
   margin: 2.5%;
-  border: 5px solid teal;
+  background-color: var(--marvel-brown);
+  padding: 1%;
+  border-radius: 10px;
+}
+
+.card-container img {
+  border-radius: 10px;
 }
 
 .card-info {
@@ -101,7 +107,6 @@ body {
 
 #footer {
   width: 100%;
-  position: fixed;
   bottom: 0;
   padding: 16px;
   background: var(--marvel-orange);
@@ -167,7 +172,7 @@ body {
 }
 
 .fa-heart {
-  color: var(--marvel-brown);
+  color: var(--marvel-blue);
   width: 20px;
 }
 
