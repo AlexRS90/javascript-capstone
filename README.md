@@ -41,7 +41,7 @@ Once you completed this steps you should see the app running at: http://localhos
 
 👤 **Jim Ntare**
 
-- GitHub: [@Ntare](https://github.com/Ntare)
+- GitHub: [@Ntare22](https://github.com/Ntare22)
 - Twitter: [@JimNtare](https://twitter.com/JimNtare)
 - LinkedIn: [@jimntare](https://www.linkedin.com/in/jimntare/)
 
