@@ -1,17 +1,42 @@
-const postComment = async (characterId, username, comment) => {
-  const url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/bJg0BJIh3l3Fd7AaCJp1/comments';
-  const sendObj = {
-    item_id: characterId,
-    username,
-    comment,
-  };
-  const postComment = await fetch(url, {
-    method: 'POST',
-    body: JSON.stringify(sendObj),
-    headers: { 'Content-type': 'application/json; charset=UTF-8' },
-  });
+const commentSection = document.createElement('div');
+commentSection.id = 'comment-input';
+const commentContainer = document.createElement('div');
+const commentsHeading = document.createElement('h4');
+let singleComment = document.createElement('div');
+let commentHeader = document.createElement('p');
+let commenter = document.createElement('h4');
+commentContainer.classList = 'comment-container';
 
-  return postComment;
+const listComments = (data) => {
+  commentContainer.innerHTML = '';
+
+  let comments;
+
+  comments = data;
+  commentsHeading.innerHTML = `${comments.length !== undefined ? comments.length : '0'} Comment(s)`;
+
+  if (comments.error !== undefined) {
+    comments = [];
+    const noComment = document.createElement('p');
+    noComment.innerHTML = 'No Comments Yet';
+    commentContainer.appendChild(noComment);
+  }
+
+  commentContainer.appendChild(commentsHeading);
+
+  comments.forEach((comment) => {
+    singleComment = document.createElement('div');
+    singleComment.classList = 'single-comment';
+    commentHeader = document.createElement('p');
+    commenter = document.createElement('h4');
+
+    commentHeader.innerHTML = `"${comment.comment}"`;
+    commenter.innerHTML = `~ ${comment.username}`;
+
+    singleComment.appendChild(commentHeader);
+    singleComment.appendChild(commenter);
+    commentContainer.appendChild(singleComment);
+  });
 };
 
 const displayComments = async (characterId) => {
@@ -25,11 +50,27 @@ const displayComments = async (characterId) => {
   }
 };
 
+const postComment = async (characterId, username, comment) => {
+  const url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/bJg0BJIh3l3Fd7AaCJp1/comments';
+  const sendObj = {
+    item_id: characterId,
+    username,
+    comment,
+  };
+  const postComment = await fetch(url, {
+    method: 'POST',
+    body: JSON.stringify(sendObj),
+    headers: { 'Content-type': 'application/json; charset=UTF-8' },
+  });
+
+  const getUpdatedComments = await displayComments(characterId);
+  await listComments(getUpdatedComments);
+  return postComment;
+};
+
 const comments = async (characterData) => {
   const content = document.querySelector('.content-rsvtn');
-
-  const commentSection = document.createElement('div');
-  commentSection.id = 'comment-input';
+  commentSection.innerHTML = '';
 
   const commentSecHeading = document.createElement('h3');
   commentSecHeading.id = 'comment-heading';
@@ -51,35 +92,9 @@ const comments = async (characterData) => {
     commentInput.value = '';
   });
 
-  let comments = await displayComments(characterData.id);
+  const comments = await displayComments(characterData.id);
 
-  const commentContainer = document.createElement('div');
-  const commentsHeading = document.createElement('h4');
-
-  if (comments.error !== undefined) {
-    comments = [];
-    const noComment = document.createElement('p');
-    noComment.innerHTML = 'No Comments Yet';
-    commentContainer.appendChild(noComment);
-  }
-
-  commentsHeading.innerHTML = `${comments.length} Comment(s)`;
-  commentContainer.appendChild(commentsHeading);
-
-  comments.forEach((comment) => {
-    const singleComment = document.createElement('div');
-    singleComment.classList = 'single-comment';
-
-    const commentHeader = document.createElement('p');
-    commentHeader.innerHTML = `"${comment.comment}"`;
-
-    const commenter = document.createElement('h4');
-    commenter.innerHTML = `~ ${comment.username}`;
-
-    singleComment.appendChild(commentHeader);
-    singleComment.appendChild(commenter);
-    commentContainer.appendChild(singleComment);
-  });
+  listComments(comments);
 
   commentSection.appendChild(commentSecHeading);
   commentSection.appendChild(usernameInput);

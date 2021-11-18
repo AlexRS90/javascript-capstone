@@ -263,9 +263,19 @@ body {
   padding: 30px 10px;
 }
 
+#comment-input button {
+  font-family: 'cpt-marvel', monospace;
+  background-color: var(--marvel-red);
+  border: none;
+  color: #fff;
+  margin: 0 200px;
+  padding: 10px 10px;
+}
+
 .single-comment {
   background-color: var(--marvel-blue);
   padding: 2px 10px;
+  margin: 10px 0;
   border-radius: 8px;
   border: 1px solid #000;
 }
@@ -277,6 +287,7 @@ body {
 
 .single-comment h4 {
   margin-left: 10px;
+  color: #fff;
 }
 
 .number-of-items {
