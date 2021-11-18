@@ -15,14 +15,14 @@ const postComment = async (characterId, username, comment) => {
 };
 
 const displayComments = async (characterId) => {
-  const url = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/bJg0BJIh3l3Fd7AaCJp1/comments?item_id=${characterId}`;
-  const comments = await fetch(url);
-  return comments.status === 400 ? [] : comments.json();
-};
-
-const commentCounter = async (characterId) => {
-  const data = await displayComments(characterId);
-  return data;
+  try {
+      const url = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/bJg0BJIh3l3Fd7AaCJp1/comments?item_id=${characterId}`;
+      const comments = await fetch(url);
+      const result = await comments.json();
+      return result;
+  } catch (e) {
+      return e;
+  }
 };
 
 const comments = async (characterData) => {
@@ -47,19 +47,21 @@ const comments = async (characterData) => {
   submitComment.innerHTML = 'Submit Comment';
   submitComment.addEventListener('click', () => postComment(characterData.id, usernameInput.value, commentInput.value));
 
-  const comments = await displayComments(characterData.id);
-  const commentNumber = await commentCounter(characterData.id);
+  let comments = await displayComments(characterData.id);
 
   const commentContainer = document.createElement('div');
   const commentsHeading = document.createElement('h4');
-  commentsHeading.innerHTML = `${commentNumber.length} Comment(s)`;
-  commentContainer.appendChild(commentsHeading);
 
-  if (comments.length === 0) {
+  if (comments.error !== undefined) {
+    comments = [];
     const noComment = document.createElement('p');
     noComment.innerHTML = 'No Comments Yet';
     commentContainer.appendChild(noComment);
   }
+  
+  commentsHeading.innerHTML = `${comments.length} Comment(s)`;
+  commentContainer.appendChild(commentsHeading);
+
 
   comments.forEach((comment) => {
     const singleComment = document.createElement('div');
@@ -84,4 +86,4 @@ const comments = async (characterData) => {
   content.appendChild(commentSection);
 };
 
-export default comments;
+export { comments, displayComments };

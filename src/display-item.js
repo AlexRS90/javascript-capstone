@@ -1,4 +1,4 @@
-import comments from './display-comments.js';
+import { comments } from './display-comments.js';
 import popUp from './pop-up.js';
 import retrieveItem from './retrieve-item.js';
 
