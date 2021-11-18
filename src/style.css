@@ -119,6 +119,17 @@ body {
   color: white;
 }
 
+.fa-heart {
+  color: var(--marvel-brown);
+  width: 20px;
+}
+
+.likes-container {
+  padding-top: 5px;
+  flex-direction: column;
+  align-items: center;
+}
+
 .rsvtn-form {
   text-align: center;
   width: 75%;
