@@ -225,3 +225,8 @@ body {
 .single-comment h4 {
   margin-left: 10px;
 }
+
+.number-of-items {
+  padding: 2%;
+  font-size: 20px;
+}
