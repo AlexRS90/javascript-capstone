@@ -73,6 +73,6 @@ window.onload = setTimeout(() => {
       likeAPI.giveLike(like.id);
     });
   });
-}, 1000);
+}, 2000);
 
 export { displaySHCards, displayLike };
