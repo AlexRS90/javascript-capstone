@@ -26,7 +26,6 @@
 - Open your terminal and run the following command: <code>git clone https://github.com/AlexRS90/javascript-capstone.git</code>
 - Run the command <code>cd javascript-capstone</code>
 - Run the command <code>npm install</code>
-- Run the command <code>npm run build</code>
 - Run the command <code>npm run start</code>
 
 Once you completed this steps you should see the app running at: http://localhost:8080/ in your browser.
