@@ -1,65 +1,61 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Marvel's Characters
 
-> One paragraph statement about the project.
+> Here you can find some of Marvel's characters, write a comment, like them or even book a rescue!
 
-![screenshot](./app_screenshot.png)
+![screenshot](ssCapstone.png)
 
-Additional description about the project and its features.
+## Description
+
+- This project was developed by a team of three people, here every one of us code a single section, we follow git-flow to build the whole project and sometimes we solved conflicts to merge our pull request to the dev branch. This project is working with two APIs one to get the info about the characters and the second one to post comments, reservations and even likes for your favourite ones.
+
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- JavaScript
+- Webpack
+- HTML/CSS
+- Linters
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://alexrs90.github.io/javascript-capstone/dist)
 
+### Setup Locally
+- Open your terminal and run the following command: <code>git clone https://github.com/AlexRS90/javascript-capstone.git</code>
+- Run the command <code>cd javascript-capstone</code>
+- Run the command <code>npm install</code>
+- Run the command <code>npm run start</code>
 
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
+Once you completed this steps you should see the app running at: http://localhost:8080/ in your browser.
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Abel Herrera**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Lino09](https://github.com/Lino09)
+- Twitter: [@AbelHerreraZam1](https://twitter.com/AbelHerreraZam1)
+- LinkedIn: [@abelherrarz](https://linkedin.com/in/abelherreraz)
 
-👤 **Author2**
+👤 **Jim Ntare**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Ntare22](https://github.com/Ntare22)
+- Twitter: [@JimNtare](https://twitter.com/JimNtare)
+- LinkedIn: [@jimntare](https://www.linkedin.com/in/jimntare/)
+
+👤 **Alejandro Ramos**
+
+- GitHub: [@AlexRS90](https://github.com/AlexRS90)
+- Twitter: [@AlejandroRBenji](https://twitter.com/AlejandroRBenji)
+- LinkedIn: [@alejandro-ramos-santos-9b0b52135](https://www.linkedin.com/in/alejandro-ramos-santos-9b0b52135/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/AlexRS90/javascript-capstone/issues).
 
 ## Show your support
 
