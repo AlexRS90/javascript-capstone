@@ -49,7 +49,7 @@ Once you completed this steps you should see the app running at: http://localhos
 
 - GitHub: [@AlexRS90](https://github.com/AlexRS90)
 - Twitter: [@AlejandroRBenji](https://twitter.com/AlejandroRBenji)
-- LinkedIn: [@alejandro-ramos-santos-9b0b52135](https://www.linkedin.com/in/alejandro-ramos-santos-9b0b52135/)
+- LinkedIn: [@alejandro-ramos-santos-9b0b52135](https://www.linkedin.com/in/AlexRS90/)
 
 ## 🤝 Contributing
 
